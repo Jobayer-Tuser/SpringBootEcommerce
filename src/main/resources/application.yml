@@ -1,0 +1,24 @@
+server:
+  port: 9020
+---
+spring:
+
+  application:
+    name: E-Commerce
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_ecommerce_rdb
+    username: root
+    password: RootPass!@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+---
+Jwt:
+  secretKey: 046465b21d0989c6248bdd34200d0f0db4a5ff4d7c837194af267de36c9b84f4
